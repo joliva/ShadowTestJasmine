@@ -1,0 +1,20 @@
+<Alloy>
+	<Window>
+		<ScrollableView id="scroller">
+			<View id='redView' backgroundColor="#a00" layout='vertical'>
+				<View layout='horizontal' width='Ti.UI.SIZE' height='Ti.UI.SIZE'>
+					<Label>Count: </Label>
+					<Label id='count' color='white'>000</Label>
+				</View>
+				<Button title='Increment' onClick='increment' top=40/>
+				<Button title='Decrement' onClick='decrement' top=10/>
+			</View>
+			<View backgroundColor="#0a0">
+				<Label>View 2</Label>
+			</View>
+			<View backgroundColor="#00a">
+				<Label>View 3</Label>
+			</View>
+		</ScrollableView>
+	</Window>
+</Alloy>
