@@ -2,19 +2,20 @@
 
 var sprintf = require('sprintf').sprintf;
 
-var self = this.my_variables = {};
+var vars = {};
+//var vars = this.myVars = {};
 
-self.value = 0;
+vars.value = 0;
 
 function increment() {
-	self.value++;
-	$.count.text = sprintf('%03d', self.value);
+	vars.value++;
+	$.count.text = sprintf('%03d', vars.value);
 }
 
 function decrement() {
-	self.value--;
-	if (self.value<0) self.value=0;
-	$.count.text = sprintf('%03d', self.value);
+	vars.value--;
+	if (vars.value<0) vars.value=0;
+	$.count.text = sprintf('%03d', vars.value);
 }
 
 $.index.open();
