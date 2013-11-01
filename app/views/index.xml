@@ -6,8 +6,8 @@
 					<Label>Count: </Label>
 					<Label id='count' color='white'>000</Label>
 				</View>
-				<Button title='Increment' onClick='increment' top=40/>
-				<Button title='Decrement' onClick='decrement' top=10/>
+				<Button id='increment' title='Increment' onClick='increment' top=40/>
+				<Button id='decrement' title='Decrement' onClick='decrement' top=10/>
 			</View>
 			<View backgroundColor="#0a0">
 				<Label>View 2</Label>
